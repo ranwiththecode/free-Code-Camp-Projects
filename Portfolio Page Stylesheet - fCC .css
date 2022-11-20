@@ -1,0 +1,128 @@
+@media (min-height:768px) and (max-height:1366px){
+    *{
+      font-family:serif;
+    }
+  }
+
+*{
+    font-family:sans-serif;
+    overflow-x:hidden;
+  }
+  
+header{
+    margin-bottom:100px;
+  }
+  
+#navbar{
+  position:fixed;
+  overflow:hidden;
+  background-color: black;
+  color:ghostwhite;
+  width:100vw;
+  top:0;
+  left:0;
+  }
+
+#navbar ul{
+    text-align:center;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#navbar li{
+    list-style-type:none;
+    display:inline-block;
+  }
+  
+  
+#navbar a{  
+  text-decoration:none;
+  font-size:large;
+  letter-spacing:2px;
+  color:ghostwhite;
+  position:relative;
+  }
+  
+#navbar a:before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0%;
+    height:3px;
+    background-color: ghostwhite;
+    transition:all 0.5s linear;
+}
+
+#navbar a:hover:before{
+    width:100%;
+}
+
+#welcome-section{
+    text-align:center;
+    width:100vw;
+    margin-bottom:40px;
+}
+#main-h1{
+    font-size:50px;
+    letter-spacing:2px;
+}
+
+#main-subtitle{
+    text-transform:uppercase;
+    color:#805500;
+    letter-spacing:2px;
+    font-size:15px;
+}
+
+#work-display{
+    text-align:center;
+    letter-spacing:2px;
+}
+
+#work-display h1{
+    font-size:30px;
+}
+
+#projects{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.flex-items{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
+.flex-items a{
+    text-decoration: none;
+    color:#805500;
+    letter-spacing:2px;
+    font-size:15px;
+}
+
+#contact-cont{
+    text-align: center;
+    letter-spacing:2.5px;
+    line-height:30px;
+}
+
+#contact-cont ul{
+    margin-top:20px;
+}
+
+#contact-cont li{
+    list-style-type: none;
+}
+
+#contact-cont a{
+    text-decoration: none;
+    color:black;
+}
+
+#contact-cont a:hover{
+    text-decoration: underline;
+}
